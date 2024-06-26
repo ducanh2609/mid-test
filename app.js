@@ -14,7 +14,7 @@ const PORT = 8080
 app.use(express.json())
 app.use(cors())
 
-app.get('/', () => {
+app.get('/', (req, res) => {
     res.send('Homepage')
 })
 app.post('/login', login)
